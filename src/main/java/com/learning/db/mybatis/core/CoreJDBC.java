@@ -19,8 +19,8 @@ public class CoreJDBC {
     }
 
     private static Statement getConnection() throws Exception {
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test1", "test1", "test1");
+        Class.forName("oracle.jdbc.OracleDriver");
+        Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:orcl", "test1", "test1");
         Statement stmt = con.createStatement();
         System.out.println("---- stmt ----" + stmt);
         return stmt;

@@ -27,26 +27,26 @@ public class CoreMyBatisMain {
         try {
             CoreMyBatisMain main = new CoreMyBatisMain();
 
-//            List<PetDVO> allPets = main.getAllPetsData();
-//            System.out.println("----- allPets ------" + allPets.size());
-//
-//            PetDVO  pet = main.getPetObject("Fluffy");
-//            System.out.println("----- pet ------" + pet);
-//
-//            List<String> allSpecies = main.getAllSpecies();
-//            System.out.println("----- allSpecies ------" + allSpecies);
-//
-//            List<PetDVO> pets = main.selectPets("m");
-//            System.out.println("----- pets ------" + pets);
-//
-//            List<PetDVO> allSnakes = main.findAllSnakes();
-//            System.out.println("----- allSnakes ------" + allSnakes);
+            List<PetDVO> allPets = main.getAllPetsData();
+            System.out.println("----- allPets ------" + allPets.size());
 
-//            List<PetDVO> snakePets = main.findSnakePets();
-//            System.out.println("----- snakePets ------" + snakePets);
+              PetDVO  pet = main.getPetObject("Fluffy");
+              System.out.println("----- pet ------" + pet);
 
-//            List<PetDVO> selectdPets = main.selectPetsIn();
-//            System.out.println("----- selectdPets ------" + selectdPets);
+              List<String> allSpecies = main.getAllSpecies();
+              System.out.println("----- allSpecies ------" + allSpecies);
+
+              List<PetDVO> pets = main.selectPets("m");
+              System.out.println("----- pets ------" + pets);
+
+              List<PetDVO> allSnakes = main.findAllSnakes();
+              System.out.println("----- allSnakes ------" + allSnakes);
+
+              List<PetDVO> snakePets = main.findSnakePets();
+              System.out.println("----- snakePets ------" + snakePets);
+
+              List<PetDVO> selectdPets = main.selectPetsIn();
+              System.out.println("----- selectdPets ------" + selectdPets);
 
              Dept dept = main.getEmployeeAndDeptData();
              List<Employee> empList = dept.getEmployee();
@@ -57,36 +57,36 @@ public class CoreMyBatisMain {
 
 
 
-//            PetDVO petObj = new PetDVO();
-//            petObj.setName("Slimmmy");
-//            petObj.setOwner("Suk");
-//            petObj.setSpecies("snake");
-//            petObj.setSex("m");
-//            petObj.setBirth(new Date());
-//
-//            main.createPet(petObj);
+              PetDVO petObj = new PetDVO();
+              petObj.setName("Slimmmy");
+              petObj.setOwner("Suk");
+              petObj.setSpecies("snake");
+              petObj.setSex("m");
+              petObj.setBirth(new Date());
+
+              main.createPet(petObj);
 
 
-//            // Update
-//            PetDVO petDataObj = new PetDVO();
-//            petDataObj.setName("Slimmy");
-//            petDataObj.setSex("f");
-//            petDataObj.setBirth(new Date());
-//            //main.updatePetData(petDataObj);
-//
-//            //Delete
-//            PetDVO petDataObj2 = new PetDVO();
-//            petDataObj2.setName("Slimmy1");
-//            petDataObj2.setSpecies("snake");
-//            main.deletePet(petDataObj2);
+              // Update
+              PetDVO petDataObj = new PetDVO();
+              petDataObj.setName("Slimmy");
+              petDataObj.setSex("f");
+              petDataObj.setBirth(new Date());
+              //main.updatePetData(petDataObj);
+
+              //Delete
+              PetDVO petDataObj2 = new PetDVO();
+              petDataObj2.setName("Slimmy1");
+              petDataObj2.setSpecies("snake");
+              main.deletePet(petDataObj2);
 
 
-//            PetDVO petDVO = new PetDVO();
-//            petDVO.setName("Slim");
-//            petDVO.setBirth(new Date());
-//            petDVO.setDeath(new Date());
-//            petDVO.setSex("m");
-//            main.updatePetDynamically(petDVO);
+              PetDVO petDVO = new PetDVO();
+              petDVO.setName("Slim");
+              petDVO.setBirth(new Date());
+              petDVO.setDeath(new Date());
+              petDVO.setSex("m");
+              main.updatePetDynamically(petDVO);
 
         } catch (Exception ex) {
             ex.printStackTrace();

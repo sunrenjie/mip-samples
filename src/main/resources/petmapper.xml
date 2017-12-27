@@ -156,7 +156,7 @@
     <select id="getEmployeeAndDeptData" parameterType="java.util.Map" resultMap="deptResult">
          SELECT e.empid as empId, e.empname as empName,
               e.salary as salary
-         FROM SPOWNER.Employee e, SPOWNER.dept d
+         FROM TEST1.Employee e, TEST1.dept d
          WHERE e.deptid = d.deptid
          AND d.deptid = #{deptId}
          ORDER BY e.empid
